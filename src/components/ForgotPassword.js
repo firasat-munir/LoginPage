@@ -21,7 +21,13 @@ function Copyright(props) {
     );
   }
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    background: {
+      default: '#f4f4f4'
+    }
+  },
+});
 
 export default function ForgotPassword() {
   const handleSubmit = (event) => {
