@@ -1,10 +1,14 @@
 import './App.css';
-import LoginPage from './components/LoginPage';
+import SignupPage from './components/SignupPage';
+// import ForgotPassword from './components/ForgotPassword';
+// import LoginPage from './components/LoginPage';
 
 function App() {
   return (
     <div>
-      <LoginPage />
+      {/* <LoginPage /> */}
+      {/* <ForgotPassword /> */}
+      <SignupPage />
     </div>
   );
 }
