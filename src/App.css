@@ -3,3 +3,11 @@
   color: red;
   font-size: .6rem;
 }
+
+.themeProvider{
+  background-color: rgb(250, 250, 250);
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url(https://wallpaper.dog/large/20492926.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
