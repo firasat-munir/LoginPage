@@ -35,7 +35,8 @@ export default function ForgotPassword() {
     const data = new FormData(event.currentTarget);
     console.log({
       email: data.get('email'),
-      password: data.get('password'),
+      oldPassword: data.get('oldPassword'),
+      newPassword: data.get('newPassword'),
     });
   };
 
@@ -73,22 +74,22 @@ export default function ForgotPassword() {
                 <TextField
                   required
                   fullWidth
-                  name="oldpassword"
+                  name="oldPassword"
                   label="Old Password"
                   type="password"
-                  id="oldpassword"
-                  autoComplete="old-password"
+                  id="oldPassword"
+                  autoComplete="off"
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
                   required
                   fullWidth
-                  name="newpassword"
+                  name="newPassword"
                   label="New Password"
                   type="password"
-                  id="newpassword"
-                  autoComplete="new-password"
+                  id="newPassword"
+                  autoComplete="off"
                 />
               </Grid>
             </Grid>
