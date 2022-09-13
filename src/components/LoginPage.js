@@ -19,6 +19,7 @@ export default function LoginPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    window.location.href="dashboard"
     console.log({
       email: data.get('email'),
       password: data.get('password'),
@@ -79,14 +80,14 @@ export default function LoginPage() {
                 id="password"
                 autoComplete="current-password"
               />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-              >
-                Sign In
-              </Button>
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  sx={{ mt: 3, mb: 2 }}
+                >
+                  Sign In
+                </Button>
               <Grid container>
                 <Grid item xs>
                   <Link href="recover" variant="body2">
